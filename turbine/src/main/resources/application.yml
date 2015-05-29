@@ -1,0 +1,17 @@
+server:
+  port: 8989
+
+spring:
+  application:
+    name: turbine
+
+turbine:
+  appConfig: consumer
+  clusterNameExpression: 'default'
+
+eureka:
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 5
